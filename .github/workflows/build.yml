@@ -14,4 +14,4 @@ jobs:
       - uses: actions/checkout@v2
       
       - name: Build CMake
-        uses: ashutoshvarma/action-cmake-build@v1
+        uses: snickerbockers/cmake-configure@prerel1
