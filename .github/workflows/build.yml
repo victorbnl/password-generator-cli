@@ -12,6 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-
-      - name: Build cli
-        run: make all
+      
+      - name: Build CMake
+        uses: ashutoshvarma/action-cmake-build@v1
