@@ -3,7 +3,7 @@
 #include <array>
 #include <time.h>
 
-#include "../lib/password.h"
+#include "password.h"
 
 int main() {
     int length;
