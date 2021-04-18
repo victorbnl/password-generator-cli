@@ -15,3 +15,12 @@ jobs:
       
       - name: Build CMake
         uses: snickerbockers/cmake-configure@prerel1
+        
+      - name: pwd
+        run: pwd
+        
+      - name: ls
+        run: ls
+      
+      - name: Make
+        run: make
