@@ -1,0 +1,8 @@
+/mnt/c/Users/Victor/Desktop/Password generator/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/Victor/Desktop/Password generator/CMakeFiles/edit_cache.dir
+/mnt/c/Users/Victor/Desktop/Password generator/lib/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/Victor/Desktop/Password generator/lib/CMakeFiles/edit_cache.dir
+/mnt/c/Users/Victor/Desktop/Password generator/lib/CMakeFiles/passw_gen_lib.dir
+/mnt/c/Users/Victor/Desktop/Password generator/src/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/Victor/Desktop/Password generator/src/CMakeFiles/edit_cache.dir
+/mnt/c/Users/Victor/Desktop/Password generator/src/CMakeFiles/passw_gen_cli.dir

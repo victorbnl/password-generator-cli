@@ -1,17 +1,12 @@
-# Password generator cli
+<h1 align="center">Password Generator CLI</h1>
 
-This is a little cli password generator made in C++ just for me to train
+> A little cli password generator made in C++ just for me to train
 
-## Example
+<img src=".readme/presentation.svg" align="center">
 
-```shell
-$ ./build/password-generator-cli 
-How long do you want your password to be? : 8
-Do you want letters? [Y/n] : y
-Do you want numbers? [Y/n] : y
-Do you want special characters? [Y/n] : y
-Your new password is: 7c=3p,aa
-```
+## Usage
+
+Arguments will be implemented later. For now this software uses input so just start it and go through the steps
 
 ## Building
 

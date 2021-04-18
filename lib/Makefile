@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/Victor/Desktop/Password generator/CMakeFiles" "/mnt/c/Users/Victor/Desktop/Password generator/CMakeFiles/progress.marks"
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd "/mnt/c/Users/Victor/Desktop/Password generator" && $(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/Victor/Desktop/Password generator/CMakeFiles" "/mnt/c/Users/Victor/Desktop/Password generator/lib/CMakeFiles/progress.marks"
+	cd "/mnt/c/Users/Victor/Desktop/Password generator" && $(MAKE) -f CMakeFiles/Makefile2 lib/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/Victor/Desktop/Password generator/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd "/mnt/c/Users/Victor/Desktop/Password generator" && $(MAKE) -f CMakeFiles/Makefile2 lib/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,44 +97,87 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd "/mnt/c/Users/Victor/Desktop/Password generator" && $(MAKE) -f CMakeFiles/Makefile2 lib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd "/mnt/c/Users/Victor/Desktop/Password generator" && $(MAKE) -f CMakeFiles/Makefile2 lib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd "/mnt/c/Users/Victor/Desktop/Password generator" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named passw_gen_lib
+# Convenience name for target.
+lib/CMakeFiles/passw_gen_lib.dir/rule:
+	cd "/mnt/c/Users/Victor/Desktop/Password generator" && $(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/passw_gen_lib.dir/rule
+.PHONY : lib/CMakeFiles/passw_gen_lib.dir/rule
 
-# Build rule for target.
-passw_gen_lib: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 passw_gen_lib
+# Convenience name for target.
+passw_gen_lib: lib/CMakeFiles/passw_gen_lib.dir/rule
+
 .PHONY : passw_gen_lib
 
 # fast build rule for target.
 passw_gen_lib/fast:
-	$(MAKE) -f lib/CMakeFiles/passw_gen_lib.dir/build.make lib/CMakeFiles/passw_gen_lib.dir/build
+	cd "/mnt/c/Users/Victor/Desktop/Password generator" && $(MAKE) -f lib/CMakeFiles/passw_gen_lib.dir/build.make lib/CMakeFiles/passw_gen_lib.dir/build
 .PHONY : passw_gen_lib/fast
 
-#=============================================================================
-# Target rules for targets named passw_gen_cli
+password.o: password.cpp.o
 
-# Build rule for target.
-passw_gen_cli: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 passw_gen_cli
-.PHONY : passw_gen_cli
+.PHONY : password.o
 
-# fast build rule for target.
-passw_gen_cli/fast:
-	$(MAKE) -f src/CMakeFiles/passw_gen_cli.dir/build.make src/CMakeFiles/passw_gen_cli.dir/build
-.PHONY : passw_gen_cli/fast
+# target to build an object file
+password.cpp.o:
+	cd "/mnt/c/Users/Victor/Desktop/Password generator" && $(MAKE) -f lib/CMakeFiles/passw_gen_lib.dir/build.make lib/CMakeFiles/passw_gen_lib.dir/password.cpp.o
+.PHONY : password.cpp.o
+
+password.i: password.cpp.i
+
+.PHONY : password.i
+
+# target to preprocess a source file
+password.cpp.i:
+	cd "/mnt/c/Users/Victor/Desktop/Password generator" && $(MAKE) -f lib/CMakeFiles/passw_gen_lib.dir/build.make lib/CMakeFiles/passw_gen_lib.dir/password.cpp.i
+.PHONY : password.cpp.i
+
+password.s: password.cpp.s
+
+.PHONY : password.s
+
+# target to generate assembly for a file
+password.cpp.s:
+	cd "/mnt/c/Users/Victor/Desktop/Password generator" && $(MAKE) -f lib/CMakeFiles/passw_gen_lib.dir/build.make lib/CMakeFiles/passw_gen_lib.dir/password.cpp.s
+.PHONY : password.cpp.s
+
+random.o: random.cpp.o
+
+.PHONY : random.o
+
+# target to build an object file
+random.cpp.o:
+	cd "/mnt/c/Users/Victor/Desktop/Password generator" && $(MAKE) -f lib/CMakeFiles/passw_gen_lib.dir/build.make lib/CMakeFiles/passw_gen_lib.dir/random.cpp.o
+.PHONY : random.cpp.o
+
+random.i: random.cpp.i
+
+.PHONY : random.i
+
+# target to preprocess a source file
+random.cpp.i:
+	cd "/mnt/c/Users/Victor/Desktop/Password generator" && $(MAKE) -f lib/CMakeFiles/passw_gen_lib.dir/build.make lib/CMakeFiles/passw_gen_lib.dir/random.cpp.i
+.PHONY : random.cpp.i
+
+random.s: random.cpp.s
+
+.PHONY : random.s
+
+# target to generate assembly for a file
+random.cpp.s:
+	cd "/mnt/c/Users/Victor/Desktop/Password generator" && $(MAKE) -f lib/CMakeFiles/passw_gen_lib.dir/build.make lib/CMakeFiles/passw_gen_lib.dir/random.cpp.s
+.PHONY : random.cpp.s
 
 # Help Target
 help:
@@ -145,7 +188,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... passw_gen_lib"
-	@echo "... passw_gen_cli"
+	@echo "... password.o"
+	@echo "... password.i"
+	@echo "... password.s"
+	@echo "... random.o"
+	@echo "... random.i"
+	@echo "... random.s"
 .PHONY : help
 
 
@@ -157,6 +205,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd "/mnt/c/Users/Victor/Desktop/Password generator" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

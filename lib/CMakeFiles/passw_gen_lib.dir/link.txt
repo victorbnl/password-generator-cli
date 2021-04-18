@@ -1,0 +1,2 @@
+/usr/bin/ar qc libpassw_gen_lib.a  CMakeFiles/passw_gen_lib.dir/password.cpp.o CMakeFiles/passw_gen_lib.dir/random.cpp.o
+/usr/bin/ranlib libpassw_gen_lib.a
