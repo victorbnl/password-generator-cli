@@ -94,3 +94,5 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+/.vs
+/out/build/x64-Debug
