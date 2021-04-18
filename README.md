@@ -2,7 +2,9 @@
 
 > A little cli password generator made in C++ just for me to train
 
-<img src=".readme/presentation.svg" align="center">
+<p align="center">
+    <img src=".readme/presentation.svg">
+</p>
 
 ## Usage
 
