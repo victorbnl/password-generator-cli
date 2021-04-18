@@ -18,4 +18,6 @@ To build this project, just run `make`. The binary will be generated in bin/
 
 ### Windows
 
-Either build and link each file manually, adapt the Makefile, use WSL or Git Bash or install Linux
+**Recommended:** use WSL or Git Bash
+
+If you don't want to, try to build it on Windows directly but I will not be able to help you a lot with it
