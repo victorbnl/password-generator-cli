@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/passw_gen_cli.dir/main.cpp.o  -o passw_gen_cli  ../lib/libpassw_gen_lib.a 
