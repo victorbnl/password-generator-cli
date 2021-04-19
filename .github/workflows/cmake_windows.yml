@@ -38,6 +38,9 @@ jobs:
       # Execute the build.  You can specify a specific target with "--target <NAME>"
       run: cmake --build . --config $BUILD_TYPE
       
+    - name: Tree for testing
+      run: tree $GITHUB_WORKSPACE /F
+      
     - name: Upload artifact
       uses: actions/upload-artifact@v2.2.3
       with:
