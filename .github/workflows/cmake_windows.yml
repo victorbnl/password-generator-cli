@@ -38,10 +38,7 @@ jobs:
       # Execute the build.  You can specify a specific target with "--target <NAME>"
       run: cmake --build . --config $BUILD_TYPE
       
-    - name: Tree
-      run: tree
-      
     - name: Upload artifact
       uses: actions/upload-artifact@v2.2.3
       with:
-        path: $GITHUB_WORKSPACE/build/src/passw_gen_cli.exe
+        path: $GITHUB_WORKSPACE/build/src/$BUILD_TYPE/passw_gen_cli.exe
