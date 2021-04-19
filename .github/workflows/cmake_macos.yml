@@ -1,4 +1,4 @@
-name: CMake Build MacOS
+name: MacOS Build
 
 on: [push]
 
@@ -28,3 +28,8 @@ jobs:
     - name: Find for testing
       shell: bash
       run: find .
+
+    - name: Upload binary
+      uses: actions/upload-artifact@v2.2.3
+      with:
+        path: ./build/src/passw_gen_cli
