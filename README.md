@@ -12,12 +12,9 @@ Arguments will be implemented later. For now this software uses input so just st
 
 ## Building
 
-### Linux
+- Create a build/ directory
+- Go in the build/ directory
+- `cmake ..`
+- `make`
 
-To build this project, just run `make`. The binary will be generated in bin/
-
-### Windows
-
-**Recommended:** use WSL or Git Bash
-
-If you don't want to, try to build it on Windows directly but I will not be able to help you a lot with it
+The binary is now in `build/src/` (it should be named `passw_gen_cli`)
