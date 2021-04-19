@@ -1,4 +1,4 @@
-name: CMake
+name: CMake Build Linux
 
 on: [push]
 
@@ -24,6 +24,7 @@ jobs:
       shell: bash
       run: cmake --build . --config $BUILD_TYPE
 
-    - name: Find for testing
-      shell: bash
-      run: find
+    - name: Upload binary
+      uses: actions/upload-artifact@v2.2.3
+      with:
+        path: ./build/src/passw_gen_cli
