@@ -4,12 +4,18 @@
 #include <time.h>
 
 #include "random.h"
+#include "exceptions.h"
 
 #define TYPE_LETTERS 0
 #define TYPE_NUMBERS 1
 #define TYPE_SPECIAL_CHARS 2
 
 std::string generatePassword(int length, bool lettersEnabled, bool numbersEnabled, bool specialsEnabled) {
+
+    if (length == 0) {
+        throw ZeroLengthPassword();
+    }
+
     std::srand((unsigned int)time(NULL));
 
     std::array<char, 26> letters = { 'a', 'z', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'q', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'w', 'x', 'c', 'v', 'b', 'n' };
@@ -28,6 +34,10 @@ std::string generatePassword(int length, bool lettersEnabled, bool numbersEnable
 
     if (specialsEnabled) {
         enabledTypes.push_back(TYPE_SPECIAL_CHARS);
+    }
+
+    if (enabledTypes.size() == 0) {
+        throw NoTypesError();
     }
 
     std::string result = "";
