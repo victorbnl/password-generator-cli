@@ -45,6 +45,10 @@ jobs:
       shell: powershell
       run: pwd
       
+    - name: Get github workspace
+      shell: powershell
+      run: echo "$GITHUB_WORKSPACE"
+      
     - name: Upload artifact
       uses: actions/upload-artifact@v2.2.3
       with:
