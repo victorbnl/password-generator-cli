@@ -1,4 +1,4 @@
-name: CMake
+name: CMake Build MacOS
 
 on: [push]
 
@@ -27,4 +27,4 @@ jobs:
 
     - name: Find for testing
       shell: bash
-      run: find
+      run: find .
