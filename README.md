@@ -12,9 +12,8 @@ Arguments will be implemented later. For now this software uses input so just st
 
 ## Building
 
-- Create a build/ directory
-- Go in the build/ directory
-- `cmake ..`
+- `cmake . -B build`
+- Go in the `build/` directory
 - `make`
 
-The binary is now in `build/src/` (it should be named `passw_gen_cli`)
+The binary is now in `/build/src/` (it should be named `passw_gen_cli`)
