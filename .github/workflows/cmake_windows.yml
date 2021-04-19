@@ -38,6 +38,9 @@ jobs:
       # Execute the build.  You can specify a specific target with "--target <NAME>"
       run: cmake --build . --config $BUILD_TYPE
       
+    - name: Tree
+      run: tree
+      
     - name: Upload artifact
       uses: actions/upload-artifact@v2.2.3
       with:
