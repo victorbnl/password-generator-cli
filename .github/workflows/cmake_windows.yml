@@ -44,4 +44,4 @@ jobs:
     - name: Upload artifact
       uses: actions/upload-artifact@v2.2.3
       with:
-        path: $GITHUB_WORKSPACE/build/src/$BUILD_TYPE/passw_gen_cli.exe
+        path: $GITHUB_WORKSPACE/build/src/Release/passw_gen_cli.exe
