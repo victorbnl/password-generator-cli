@@ -41,6 +41,10 @@ jobs:
     - name: Tree for testing
       run: tree $GITHUB_WORKSPACE /F
       
+    - name: Find for testing
+      shell: bash
+      run: find
+      
     - name: Upload artifact
       uses: actions/upload-artifact@v2.2.3
       with:
