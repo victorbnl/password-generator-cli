@@ -7,7 +7,7 @@
 #include "exceptions.h"
 
 int main(int argc, char* argv[]) {
-    int length = 8;
+    int length = 12;
     bool letters = true;
     bool numbers = true;
     bool specials = true;
