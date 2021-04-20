@@ -1,5 +1,5 @@
 add_library(
-	passw_gen_lib
+	passgen_lib
 	password.cpp
 	password.h
 	random.cpp
