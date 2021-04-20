@@ -13,7 +13,6 @@ int main(int argc, char* argv[]) {
     bool specials = true;
     for (int i = 0; i < argc; i++) {
         std::string arg = std::string(argv[i]);
-        std::cout << arg << std::endl;
         if (arg == "--help") {
             std::cout
                 << std::endl
@@ -21,6 +20,9 @@ int main(int argc, char* argv[]) {
                 << std::endl
                 << "    --help" << std::endl
                 << "        Displays this menu and exit" << std::endl
+                << std::endl
+                << "    -l / --length <number>" << std::endl
+                << "        Sets password length. Default: 12" << std::endl
                 << std::endl
                 << "    --no-letters" << std::endl
                 << "        Disables letters" << std::endl
@@ -32,6 +34,9 @@ int main(int argc, char* argv[]) {
                 << "        Disables special characters" << std::endl
                 << std::endl;
             return 0;
+        } else if (arg == "-l" || arg == "--length") {
+            i++;
+            length = atoi(argv[i]);
         } else if (arg == "--no-letters") {
             letters = false;
         } else if (arg == "--no-numbers") {
