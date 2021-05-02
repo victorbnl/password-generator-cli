@@ -8,7 +8,8 @@
 
 int main(int argc, char* argv[]) {
     int length = 12;
-    bool letters = true;
+    bool upperLetters = true;
+    bool lowerLetters = true;
     bool numbers = true;
     bool specials = true;
     for (int i = 0; i < argc; i++) {
@@ -38,7 +39,8 @@ int main(int argc, char* argv[]) {
             i++;
             length = atoi(argv[i]);
         } else if (arg == "--no-letters") {
-            letters = false;
+            upperLetters = false;
+            lowerLetters = false;
         } else if (arg == "--no-numbers") {
             numbers = false;
         } else if (arg == "--no-specials") {
@@ -46,7 +48,7 @@ int main(int argc, char* argv[]) {
         }
     }
 
-    std::string password = generatePassword(length, letters, numbers, specials);
+    std::string password = generatePassword(length, lowerLetters, upperLetters, numbers, specials);
 
     std::cout << "Your new password is : " << password << std::endl;
 
